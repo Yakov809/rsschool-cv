@@ -1,4 +1,5 @@
 ### Yakov Chernov
+![Chernov](600.jpg "Y.Chernov")
 #### e-mail: chernov809@yandex.ru 
 I am a professional telecommunications engineer. I have experience as an engineer since 2006. He took part in the construction and deployment of many communication systems. Worked as a system administrator for servers and user workstations, medical equipment.
 
