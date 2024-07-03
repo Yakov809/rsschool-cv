@@ -1,1 +1,269 @@
-//
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,regular,500,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Forum:regular&display=swap");
+
+/* 
+100	Тонкий Thin  ++
+200	Дополнительный светлый (Сверхсветлый) Extra Light (Ultra Light)
+300	Светлый Light ++
+400	Нормальный Normal
+500	Средний Medium ++
+600	Полужирный Semi Bold (Demi Bold)
+700	Жирный Bold ++
+800	Дополнительный жирный Extra Bold (Ultra Bold)
+900	Чёрный (Густой) Black (Heavy)
+*/
+/*$fontSize18: rem(18); // где 18(px) - размер шрифта по умолчанию макета
+$fontSize22: rem(22);
+$fontSize28: rem(28);
+$fontSize32: rem(32);
+$fontSize80: rem(80);
+*/
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #000000;
+  line-height: 1;
+  font-family: "Roboto";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea {
+  font-family: "Roboto";
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/*
+@media(max-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media(max-width: 480px) {
+  .container {
+    max-width: none;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media(max-width: 380px) {
+  .container {
+    max-width: none;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+*/
+.header {
+  margin-top: 40px;
+}
+
+.header-container {
+  display: flex;
+  color: #ffffff;
+  font-family: "Forum";
+  font-size: 40px;
+  height: 430px;
+  background-color: rgb(60, 59, 110);
+  border-radius: 15px;
+}
+
+.header-title {
+  margin-left: 35px;
+}
+
+.header-img__picture {
+  height: 400px;
+  width: 350px;
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
+  object-fit: cover;
+}
+
+.header-title__name {
+  font-size: 45px;
+  margin-top: 112px;
+}
+
+.header-title__review {
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.header-title__contact {
+  font-size: 25px;
+  margin-top: 40px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.section-skill {
+  width: 100%;
+}
+
+.section-code {
+  border-radius: 15px;
+  border: solid rgb(178, 34, 52);
+  padding: 50px;
+  width: auto;
+  height: auto;
+}
+
+.section-code__title {
+  font-style: italic;
+  color: rgb(178, 34, 52);
+  margin-bottom: 20px;
+}
+
+.skill__title {
+  font-family: "Roboto";
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.skill-nav__item {
+  background-color: rgb(178, 34, 52);
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-family: "Roboto";
+  font-size: 25px;
+  padding: 5px;
+  padding-left: 15px;
+}
+
+.section-about {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.section-about__header {
+  font-family: "Forum";
+  font-size: 24px;
+  line-height: 45px;
+  margin: 0 auto;
+}
+
+.section-about__text {
+  max-width: 800px;
+  font-family: "Forum";
+  font-size: 24px;
+  line-height: 45px;
+  margin: 0 auto;
+}
+
+.section-about__img {
+  margin: 0 auto;
+}
+
+.footer {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: rgb(178, 34, 52);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 15px;
+  font-family: "Roboto";
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.footer-left {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-left__logo {
+  width: 40px;
+}
+
+.footer-left__link {
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.footer-center__year {
+  padding-top: 30px;
+  padding-left: 280%;
+}
+
+.footer-right {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-right__logo {
+  width: 148px;
+}
+
+.footer-right__link {
+  padding-top: 15px;
+  padding-left: 10px;
+}
