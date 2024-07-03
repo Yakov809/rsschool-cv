@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,regular,500,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Forum:regular&display=swap");
+
 /* 
 100	Тонкий Thin  ++
 200	Дополнительный светлый (Сверхсветлый) Extra Light (Ultra Light)
@@ -120,7 +121,7 @@ html {
   color: #ffffff;
   font-family: "Forum";
   font-size: 40px;
-  height: 380px;
+  height: 430px;
   background-color: rgb(60, 59, 110);
   border-radius: 15px;
 }
@@ -130,16 +131,17 @@ html {
 }
 
 .header-img__picture {
-  height: 350px;
+  height: 400px;
   width: 350px;
   border-radius: 15px;
   margin-top: 15px;
   margin-left: 15px;
+  object-fit: cover;
 }
 
 .header-title__name {
   font-size: 45px;
-  margin-top: 82px;
+  margin-top: 112px;
 }
 
 .header-title__review {
@@ -156,6 +158,10 @@ html {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
+}
+
+.section-skill {
+  width: 100%;
 }
 
 .section-code {
@@ -180,18 +186,26 @@ html {
 
 .skill-nav__item {
   background-color: rgb(178, 34, 52);
-  width: 608px;
   color: #ffffff;
   margin-bottom: 15px;
   font-family: "Roboto";
   font-size: 25px;
   padding: 5px;
+  padding-left: 15px;
 }
 
 .section-about {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.section-about__header {
+  font-family: "Forum";
+  font-size: 24px;
+  line-height: 45px;
+  margin: 0 auto;
 }
 
 .section-about__text {
@@ -199,4 +213,57 @@ html {
   font-family: "Forum";
   font-size: 24px;
   line-height: 45px;
+  margin: 0 auto;
+}
+
+.section-about__img {
+  margin: 0 auto;
+}
+
+.footer {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: rgb(178, 34, 52);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 15px;
+  font-family: "Roboto";
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.footer-left {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-left__logo {
+  width: 40px;
+}
+
+.footer-left__link {
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.footer-center__year {
+  padding-top: 30px;
+  padding-left: 280%;
+}
+
+.footer-right {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-right__logo {
+  width: 148px;
+}
+
+.footer-right__link {
+  padding-top: 15px;
+  padding-left: 10px;
 }
